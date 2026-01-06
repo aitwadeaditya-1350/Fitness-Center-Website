@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 26px;
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 26px;
+            text-align: left;
+        }
+        
+        .auto-style4 {
+            text-align: left;
+        }
+        
+        </style>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+&nbsp;&nbsp;
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2 class="auto-style4">
+                        <asp:Image ID="Image1" runat="server" Height="69px" ImageUrl="~/Images/LOGO.png" Width="75px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FITNESS CENTER</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="Table" Width="100%">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Admin/Product.aspx" Text="Product" Value="Product"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Category.aspx" Text="Category" Value="Category"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Course.aspx" Text="Course" Value="Course"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Trainer.aspx" Text="Trainer" Value="Trainer"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/ManageAdmin.aspx" Text="ManageAdmin" Value="ManageAdmin"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

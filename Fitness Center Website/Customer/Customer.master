@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Customer.master.cs" Inherits="Customer_Customer" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="Table" Width="100%">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem Text="Category" Value="Category"></asp:MenuItem>
+                            <asp:MenuItem Text="Product" Value="Product" NavigateUrl="~/Customer/Product.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Course" Value="Course"></asp:MenuItem>
+                            <asp:MenuItem Text="Trainer" Value="Trainer"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+   
+</body>
+</html>
